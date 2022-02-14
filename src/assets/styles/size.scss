@@ -1,0 +1,12 @@
+/* // 编辑后效果类似于下
+// .p-t {
+//     &-12 {
+//         pading-top: 12px;
+//     }
+// } */
+
+@for $i from 1 through 50 {
+    .s-#{$i} {
+        font-size: 1px * $i!important;
+    }
+}

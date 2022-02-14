@@ -1,0 +1,88 @@
+/* 清除谷歌浏览器下的 search 叉号 */
+input::-webkit-search-cancel-button {
+    display: none;
+}
+/* 清除IE下的 search 叉号 */
+input[type='search']::-ms-clear {
+    display: none;
+}
+/* 去掉input disabled 默认半透明样式 */
+input[disabled] {
+    background: none;
+    opacity: 1;
+}
+input,
+select,
+textarea {
+    border: none;
+    border-radius: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+body {
+    background-color: #fff;
+}
+
+/* 文字溢出隐藏 */
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+/* 输入框样式 */
+input {
+    border-radius: 4px;
+    min-width: 1px;
+    border: 0.5px solid rgba(152, 161, 168, 0.3);
+    font-size: 12px;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    /* border-color: #13bbad; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: PingFangSC-Regular, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ping Fang';
+    min-height: 100%;
+    font-weight: 500;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: #2f363d;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

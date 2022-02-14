@@ -1,0 +1,14 @@
+// 编辑后效果类似于下
+// .p-t {
+//     &-12 {
+//         pading-top: 12px;
+//     }
+// }
+
+@for $i from 1 through 50 {
+    .p-#{$i}{padding: 1px * $i}
+}
+
+@for $i from 1 through 50 {
+    .p-l-#{$i}{padding-left: 1px * $i}
+}
